@@ -9,9 +9,10 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
+    stage('Checkout') {
             steps {
-                git 'https://github.com/3bdallahai/python-cicd-docker-jenkins-pipeline.git'
+                git branch: 'main',
+                    url: 'https://github.com/3bdallahai/python-cicd-docker-jenkins-pipeline'
             }
         }
 
