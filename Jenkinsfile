@@ -22,15 +22,14 @@ stage('Build & Test') {
         python3 -m venv venv
         . venv/bin/activate
         pip install -r requirements.txt
+        export PYTHONPATH=$PWD
         pytest --maxfail=1 --disable-warnings
         '''
     }
 }
 
-        stage('Test') {
-            steps {
-                sh 'pytest --maxfail=1 --disable-warnings'
-            }
+
+
         }
 
         stage('Build Docker Image') {
