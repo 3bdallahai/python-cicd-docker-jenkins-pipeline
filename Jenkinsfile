@@ -11,7 +11,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://https://github.com/3bdallahai/python-cicd-docker-jenkins-pipeline.git'
+                git 'https://github.com/3bdallahai/python-cicd-docker-jenkins-pipeline.git'
             }
         }
 
