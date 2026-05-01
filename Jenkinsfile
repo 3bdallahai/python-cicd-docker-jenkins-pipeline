@@ -16,12 +16,13 @@ pipeline {
             }
         }
 
-stage('Build') {
+stage('Build & Test') {
     steps {
         sh '''
         python3 -m venv venv
         . venv/bin/activate
         pip install -r requirements.txt
+        pytest --maxfail=1 --disable-warnings
         '''
     }
 }
