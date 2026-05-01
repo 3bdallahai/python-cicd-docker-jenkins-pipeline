@@ -1,0 +1,4 @@
+2026-05-01 14:35:23,461 - INFO - Cleaning data: [1, -2, None, 5, 10]
+2026-05-01 14:35:23,461 - INFO - Cleaned data: [1, 5, 10]
+2026-05-01 14:35:23,462 - INFO - Computing statistics for: [1, 5, 10]
+2026-05-01 14:35:23,462 - INFO - Computed stats: {'mean': 5.333333333333333, 'min': 1, 'max': 10}
