@@ -64,7 +64,7 @@ stage('Build & Test') {
             }
         }
 
-        stage('Fail on Errors in Logs') {
+        stage('Check Errors in Logs') {
             steps {
                 sh '''
                 if grep -i "error" logs/app.log; then
